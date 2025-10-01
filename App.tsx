@@ -10,7 +10,7 @@ import { PRESETS, DEFAULT_EMPTY_PATTERN } from './constants';
 
 const App: React.FC = () => {
     const [isMobile, setIsMobile] = useState(false);
-    const [bpm, setBpm] = useState<number>(120);
+    const [bpm, setBpm] = useState<number>(60);
     const [volume, setVolume] = useState<number>(0.75);
     const [numMeasures, setNumMeasures] = useState<number>(4);
     const [beatsPerMeasure, setBeatsPerMeasure] = useState<number[]>(Array(8).fill(4));
