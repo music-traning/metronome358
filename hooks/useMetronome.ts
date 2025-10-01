@@ -38,7 +38,7 @@ export const useMetronome = ({
     }, [volume]);
     
     const scheduleNextBeat = useCallback(() => {
-        const secondsPerBeat = 60.0 / bpm;
+        const secondsPerBeat = 60.0 / (bpm * 2); 
         const clickState = pattern[localCurrentMeasure.current][localCurrentBeat.current];
 
         if (clickState === 1) {
